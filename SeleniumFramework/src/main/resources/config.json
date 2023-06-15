@@ -1,0 +1,12 @@
+{
+	"staging":{
+		"url":"https://www.saucedemo.com/",
+		"pageloadtimeout":"30",
+		"implicitwaittime":"30"
+	},
+	"uat":{
+		"url":"https://www.saucedemo.com/",
+		"pageloadtimeout":"30",
+		"implicitwaittime":"30"
+	}
+}

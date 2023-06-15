@@ -1,0 +1,11 @@
+{
+	"testdata":{
+		"Product Name":"Sauce Labs Backpack | Sauce Labs Onesie",
+		"Firstname":"Test",
+		"Lastname":"Automation",
+		"Zipcode":"12345"
+	},
+	"expecteddata":{
+		"Confirmation Message":"Thank you for your order!"
+	}
+}
