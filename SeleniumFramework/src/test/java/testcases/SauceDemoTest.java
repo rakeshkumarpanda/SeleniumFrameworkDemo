@@ -64,7 +64,7 @@ public class SauceDemoTest extends AppTestBase {
 		softAssert.assertAll();
 	}
 	
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void tearDown() {
 		browserTearDown();
 	}

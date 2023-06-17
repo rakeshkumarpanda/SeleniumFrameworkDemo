@@ -29,16 +29,16 @@ public class TestBase
 			String browser = map.get("browser");
 			if(browser.equalsIgnoreCase("Chrome"))
 			{
-//				Map<String, Object> prefs = new HashMap<String, Object>();
-//				prefs.put("intl.accept_languages", "qps-ploc,en-us,en");
-//				prefs.put("download.default_directory", map.get("downloadlocation"));
-//				ChromeOptions options = new ChromeOptions();
-//				options.setExperimentalOption("prefs", prefs);
-//				options.addArguments("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36");
-//				options.addArguments("enable-automation");
-//				options.addArguments("--dns-prefetch-disable");
-////				options.addArguments("--remote-allow-origins=*","ignore-certificate-errors");//Allowing for remote access
-//				options.setPageLoadStrategy(PageLoadStrategy.EAGER);
+				Map<String, Object> prefs = new HashMap<String, Object>();
+				prefs.put("intl.accept_languages", "qps-ploc,en-us,en");
+				prefs.put("download.default_directory", map.get("downloadlocation"));
+				ChromeOptions options = new ChromeOptions();
+				options.setExperimentalOption("prefs", prefs);
+				options.addArguments("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36");
+				options.addArguments("enable-automation");
+				options.addArguments("--dns-prefetch-disable");
+				options.addArguments("--remote-allow-origins=*","ignore-certificate-errors");//Allowing for remote access
+				options.setPageLoadStrategy(PageLoadStrategy.EAGER);
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
 			}
